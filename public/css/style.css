@@ -65,6 +65,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 5%;
+    margin-bottom: 40px;
 }
 
 .header-flashcard-screen img {
@@ -81,6 +82,64 @@ body {
     color: var(--color-button-bg);
 }
 
+.flashcard-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+    max-width: 340px;
+    padding: 15px;
+    margin-bottom: 5px;
+    background-color: var(--color-button-bg);
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border: none;
+}
+
+.buttons {
+    margin-bottom: 55px;
+}
+
+.btn-question p {
+    font-family: var(--font-recursive);
+    font-weight: 700;
+    font-size: 110%;
+    line-height: 14px;
+    color: var(--color-text-cards);
+}
+
+.btn-question ion-icon {
+    font-size: 25px;
+    color: var(--color-text-cards);
+}
+
+.footer-flashcard-screen {
+    height: 50px;
+    background-color: var(--color-button-bg);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.footer-flashcard-screen p {
+    font-family: var(--font-recursive);
+    font-size: 12px;
+    color: var(--color-text-cards);
+    line-height: 14px;
+    font-weight: 400;
+}
+
 
 @media (min-width: 800px) {
     .header-flashcard-screen img {
@@ -91,5 +150,25 @@ body {
     .header-flashcard-screen h1 {
         font-size: 32px;
         line-height: 40px;
+    }
+
+    .btn-question p {
+        line-height: 20px;
+    }
+
+    .btn-question ion-icon {
+        font-size: 32px;
+    }
+
+    .buttons {
+        margin-bottom: 80px;
+    }
+
+    .footer-flashcard-screen {
+        height: 75px;
+    }
+
+    .footer-flashcard-screen p {
+        font-size: 19px;
     }
 }

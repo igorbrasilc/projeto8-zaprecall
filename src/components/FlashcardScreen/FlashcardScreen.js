@@ -1,14 +1,16 @@
 import HeaderFlashcardScreen from './HeaderFlashcardScreen';
+import ButtonsFlashcardScreen from './ButtonsFlashcardScreen';
+import FooterFlashcardScreen from './FooterFlashcardScreen';
 
 function FlashcardScreen() {
     return (
-    <>
-    <HeaderFlashcardScreen />
-    {/* <button className="btn-question">
-        <p>Pergunta 1</p>
-
-    </button> */}
-    </>
+    <div className="flashcard-screen">
+        <HeaderFlashcardScreen />
+        <section className="buttons">
+            <ButtonsFlashcardScreen />
+        </section>
+        <FooterFlashcardScreen />
+    </div>
     )
 }
 
