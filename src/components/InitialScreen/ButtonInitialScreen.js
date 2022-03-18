@@ -1,5 +1,5 @@
-export default function ButtonInitialScreen() {
+export default function ButtonInitialScreen(props) {
     return (
-        <button className="header-button">Iniciar Recall!</button>
+        <button className="header-button" onClick={props.callback}>Iniciar Recall!</button>
     )
 }

@@ -1,19 +1,9 @@
 import ButtonFlashcardHidden from './ButtonFlashcardHidden';
-
-const questions = [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
-];
+import {questionsReact} from '../constants/global';
 
 function ButtonsFlashcardScreen() {
     return (
-        questions.map((question, index) => <ButtonFlashcardHidden number={index + 1} />)
+        questionsReact.map((question, index) => <ButtonFlashcardHidden number={index + 1} />)
     )
 }
 
