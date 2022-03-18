@@ -8,8 +8,13 @@
     --color-button-red: #FF3030;
     --color-button-orange: #FF922E;
     --color-button-green: #2FBE34;
+    --color-yellow-logo: #feff46;
+    --color-didnt-remember: #FF3030;
+    --color-remembered: #FF922E;
+    --color-zap: #2FBE34;
     --font-recursive: 'Recursive', sans-serif;
     --font-righteous:  'Righteous';
+    transition: 300ms;
 }
 
 body {
@@ -54,8 +59,6 @@ body {
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--color-button-bg);
-
-    transition: 300ms;
 }
 
 .components-initial-screen button:hover {
@@ -73,14 +76,14 @@ body {
 
 .header-flashcard-screen img {
     margin-right: 6px;
-    width: 26px;
-    height: 31px;
+    width: 35px;
+    height: 41px;
 }
 
 .header-flashcard-screen h1 {
     font-family: var(--font-righteous);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 25px;
     color: var(--color-button-bg);
 }
@@ -103,12 +106,11 @@ body {
     border-radius: 5px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border: none;
-    transition: 300ms;
 }
 
 .btn-question:hover {
     cursor: pointer;
-    background-color: #feff46;
+    background-color: var(--color-yellow-logo); 
 }
 
 .buttons {
@@ -143,7 +145,7 @@ body {
 
 .footer-flashcard-screen p {
     font-family: var(--font-recursive);
-    font-size: 12px;
+    font-size: 100%;
     color: var(--color-text-cards);
     line-height: 14px;
     font-weight: 400;
@@ -161,16 +163,24 @@ body {
     word-break: break-word;
 }
 
+.article-question:hover {
+    background-color: var(--color-yellow-logo);
+}
+
+.article-question img:hover {
+    cursor: pointer;
+}
+
 .article-question p {
     font-family: var(--font-recursive);
     font-weight: 400;
     font-size: 100%;
-    line-height: 14px;
+    line-height: 20px;
     color: var(--color-text-cards);
     margin-left: 6px;
     margin-right: 6px;
     padding-top: 13px;
-    padding-bottom: 39px;
+    padding-bottom: 30px;
 }
 
 .article-question img {
@@ -178,6 +188,65 @@ body {
     position: absolute;
     bottom: 7px;
     right: 8px;
+}
+
+.btns-answer button {
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px;
+    width: 30%;
+    font-family: var(--font-recursive);
+    color: var(--color-button-bg);
+    font-weight: 400;
+    font-size: 80%;
+    line-height: 12px;
+    margin-bottom: 4px;
+}
+
+.btns-answer button:hover {
+    cursor: pointer;
+}
+
+.btn-didnt-remember {
+    background-color: var(--color-didnt-remember);
+}
+
+.btn-remembered {
+    background-color: var(--color-remembered);
+}
+
+.btn-zap {
+    background-color: var(--color-zap);
+}
+
+.btns-answer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.question-not-remembered p {
+    color: var(--color-didnt-remember);
+}
+
+.question-not-remembered ion-icon {
+    color: var(--color-didnt-remember);
+}
+
+.question-zap p {
+    color: var(--color-zap);
+}
+
+.question-zap ion-icon {
+    color: var(--color-zap);
+}
+
+.question-remembered p {
+    color: var(--color-remembered);
+}
+
+.question-remembered ion-icon {
+    color: var(--color-remembered);
 }
 
 
@@ -208,7 +277,7 @@ body {
         height: 75px;
     }
 
-    .footer-flashcard-screen p {
-        font-size: 19px;
+    .article-question img {
+        width: 32px;
     }
 }
