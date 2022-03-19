@@ -7,11 +7,11 @@ function shuffle() {
     return Math.random() - 0.5;
 }
 
-function ButtonsFlashcardScreen() {
+function ButtonsFlashcardScreen(props) {
 
     return (
         questionsShuffled.map((question, index) => 
-        <ButtonFlashcard number={index + 1} question={question.question} answer={question.answer}/>)
+        <ButtonFlashcard key={index} number={index + 1} question={question.question} answer={question.answer} callback={props.callback}/>)
     )
 }
 

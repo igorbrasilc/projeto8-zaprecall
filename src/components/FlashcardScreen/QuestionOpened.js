@@ -15,9 +15,9 @@ export default function QuestionOpened(props) {
         <article className="article-question">
             <p>{answer}</p>
             <div className="btns-answer">
-                <button className="btn-didnt-remember" onClick={() => callback("red")}>Não lembrei</button>
-                <button className="btn-remembered" onClick={() => callback("yellow")}>Quase não lembrei</button>
-                <button className="btn-zap" onClick={() => callback("green")}>Zap!</button>
+                <button className="btn-didnt-remember" onClick={(color) => callback("red")}>Não lembrei</button>
+                <button className="btn-remembered" onClick={(color) => callback("yellow")}>Quase não lembrei</button>
+                <button className="btn-zap" onClick={(color) => callback("green")}>Zap!</button>
             </div>
         </article>  
     )
