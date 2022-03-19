@@ -114,7 +114,7 @@ body {
 }
 
 .buttons {
-    margin-bottom: 55px;
+    margin-bottom: 5em;
 }
 
 .btn-question p {
@@ -131,7 +131,8 @@ body {
 }
 
 .footer-flashcard-screen {
-    height: 50px;
+    min-height: 50px;
+    height:auto;
     background-color: var(--color-button-bg);
     position: fixed;
     bottom: 0;
@@ -148,8 +149,19 @@ body {
     font-family: var(--font-recursive);
     font-size: 100%;
     color: var(--color-text-cards);
-    line-height: 14px;
+    line-height: 18px;
     font-weight: 400;
+    padding-top: 14px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.footer-flashcard-screen img {
+    margin-right: 12px;
+}
+
+.footer-flashcard-screen span {
+    font-weight: 700;
 }
 
 .footer-icons {
@@ -283,7 +295,7 @@ body {
     }
 
     .footer-flashcard-screen {
-        height: 75px;
+        min-height: 75px;
     }
 
     .article-question img {
