@@ -2,7 +2,7 @@ import SadFace from '../../assets/sad.png';
 
 export default function FooterCompletedFail(props) {
 
-    const {answeredCount, answeredColors, questionLength} = props;
+    const {answeredCount, answeredColors, questionLength, callback} = props;
     
     return (
         <footer className="footer-flashcard-screen">
@@ -17,6 +17,7 @@ export default function FooterCompletedFail(props) {
                 else return <div className="question-zap"><ion-icon name="checkmark-circle"></ion-icon></div>
             })}
             </div>
+            <button className="btn-reset" onClick={() => callback()}>REINICIAR RECALL</button>
         </footer>
     )
 }

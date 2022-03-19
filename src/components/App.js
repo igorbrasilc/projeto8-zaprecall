@@ -9,12 +9,12 @@ function App() {
     const [stateInitialScreen, setStateInitialScreen] = React.useState(true);
 
     function changeInitialScreen() {
-        setStateInitialScreen(false);
+        setStateInitialScreen(!stateInitialScreen);
     }
 
     return (
     <>
-    {stateInitialScreen === true ? <InitialScreen callback={changeInitialScreen} /> : <FlashcardScreen />}  
+    {stateInitialScreen === true ? <InitialScreen callback={changeInitialScreen} /> : <FlashcardScreen callback={changeInitialScreen} />}  
     </>
     )
 }

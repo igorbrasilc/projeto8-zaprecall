@@ -270,6 +270,29 @@ body {
     color: var(--color-remembered);
 }
 
+.btn-reset {
+    background-color: var(--color-body);
+    color: var(--color-button-bg);
+    width: 167px;
+    height: 32px;
+    border-radius: 5px;
+    font-family: var(--font-recursive);
+    font-weight: 400;
+    font-size: 85%;
+    line-height: 17px;
+    margin-top: 15px;
+    margin-bottom: 21px;
+    border: none;
+}
+
+.btn-reset:hover {
+    cursor: pointer;
+    border: 1px solid var(--color-border-initial);
+    color: var(--color-yellow-logo);
+    width: 172px;
+    height: 40px;
+}
+
 
 @media (min-width: 800px) {
     .header-flashcard-screen img {

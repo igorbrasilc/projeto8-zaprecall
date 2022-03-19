@@ -10,6 +10,15 @@ const questionsReact = [
     {question: "Usamos estado (state) para __", answer: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"}
 ];
 
-// const [stateInitialScreen, setStateInitialScreen] = React.useState(true);
+const questionsHobbit = [
+    {question: "Nos livros, quem matou Bolg?", answer: "Beorn"},
+    {question: "O café é às __", answer: "Quatro"},
+    {question: "Quem salvou Bilbo da fogueira dos trolls?", answer: "Gandalf"},
+    {question: "Quais são as linhagens familiares de Bilbo?", answer: "Tûk e Baggins"},
+    {question: "Quem decifra as runas lunares para a trupe?", answer: "Elrond"},
+    {question: "Qual foi o pecado de Thorin-Escudo-de-Carvalho?", answer: "Ganância"},
+    {question: "Quem mata Smaug?", answer: "Bard"},
+    {question: "De onde surgiram Smaug e outras grandes serper?", answer: "Urzal Seco"}
+];
 
-export {questionsReact}
+export {questionsReact, questionsHobbit}
