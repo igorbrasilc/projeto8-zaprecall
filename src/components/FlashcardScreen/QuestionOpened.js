@@ -1,4 +1,5 @@
 import React from 'react';
+import TurnoverIcon from '../../assets/setinha.png';
 
 
 export default function QuestionOpened(props) {
@@ -9,7 +10,7 @@ export default function QuestionOpened(props) {
     return selected === false ? (
         <article className="article-question">
             <p>{question}</p>
-            <img src="./assets/setinha.png" alt="turnover-icon" onClick={() => setSelected(true)} />
+            <img src={TurnoverIcon} alt="turnover-icon" onClick={() => setSelected(true)} />
         </article>  
     ) : (
         <article className="article-question">

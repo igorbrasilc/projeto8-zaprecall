@@ -1,10 +1,12 @@
+import PartyFace from '../../assets/party.png';
+
 export default function FooterCompletedSuccess(props) {
 
     const {answeredCount, answeredColors, questionLength} = props;
 
     return (
         <footer className="footer-flashcard-screen">
-            <p><img src="./assets/party.png" alt="party-face"/><span>Parabéns!</span></p>
+            <p><img src={PartyFace} alt="party-face"/><span>Parabéns!</span></p>
             <p>Você não esqueceu de nenhum flashcard!</p>
             <p>{answeredCount}/{questionLength} CONCLUÍDOS</p>
             <div className="footer-icons">

@@ -1,10 +1,12 @@
+import SadFace from '../../assets/sad.png';
+
 export default function FooterCompletedFail(props) {
 
     const {answeredCount, answeredColors, questionLength} = props;
     
     return (
         <footer className="footer-flashcard-screen">
-            <p><img src="./assets/sad.png" alt="sad-face"/><span>Putz...</span></p>
+            <p><img src={SadFace} alt="sad-face"/><span>Putz...</span></p>
             <p>Ainda faltam alguns...<br></br>
             Mas não desanime!</p>
             <p>{answeredCount}/{questionLength} CONCLUÍDOS</p>

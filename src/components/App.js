@@ -1,6 +1,8 @@
 import InitialScreen from './InitialScreen/InitialScreen';
 import FlashcardScreen from './FlashcardScreen/FlashcardScreen';
 import React from 'react';
+import '../css/reset.css';
+import '../css/style.css';
 
 function App() {
 
