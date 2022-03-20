@@ -7,7 +7,8 @@ export default function FooterCompletedSuccess(props) {
     return (
         <footer className="footer-flashcard-screen">
             <p><img src={PartyFace} alt="party-face"/><span>Parabéns!</span></p>
-            <p>Você não esqueceu de nenhum flashcard!</p>
+            <p>Você não esqueceu de nenhum flashcard <br></br>
+            ou atingiu sua meta de zaps!</p>
             <p>{answeredCount}/{questionLength} CONCLUÍDOS</p>
             <div className="footer-icons">
             {[...answeredColors].map(color => {

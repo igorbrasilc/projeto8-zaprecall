@@ -61,6 +61,21 @@ body {
     background-color: var(--color-button-bg);
 }
 
+.components-initial-screen input {
+    width: 70vw;
+    max-width: 340px;
+    padding: 10px;
+    font-size: 95%;
+    line-height: 14px;
+    font-weight: 400;
+    color: var(--color-border-initial);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-button-bg);
+    margin-bottom: 18px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 .components-initial-screen button:hover {
     cursor: pointer;
     background-color: #feff46;
@@ -130,9 +145,15 @@ body {
     color: var(--color-text-cards);
 }
 
+button:disabled {
+    border: none;
+    background-color: #E8E8E8;
+    color: #C0C0C0;
+}
+
 .footer-flashcard-screen {
     min-height: 50px;
-    height:auto;
+    height: auto;
     background-color: var(--color-button-bg);
     position: fixed;
     bottom: 0;

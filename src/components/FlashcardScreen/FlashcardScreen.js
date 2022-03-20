@@ -1,12 +1,12 @@
 import HeaderFlashcardScreen from './HeaderFlashcardScreen';
 import ButtonsFlashcardScreen from './ButtonsFlashcardScreen';
 import FooterFlashcardScreen from './FooterFlashcardScreen';
-import React from 'react';
+import {useState} from 'react';
 
 function FlashcardScreen(props) {
 
-    const [completedQuestion, setCompletedQuestion] = React.useState(0);
-    const [colorCompletedQuestion, setColorCompletedQuestion] = React.useState([]);
+    const [completedQuestion, setCompletedQuestion] = useState(0);
+    const [colorCompletedQuestion, setColorCompletedQuestion] = useState([]);
 
     function increaseCompletedQuestion(color) {
         setCompletedQuestion(completedQuestion + 1);
@@ -26,7 +26,8 @@ function FlashcardScreen(props) {
         <section className="buttons">
             <ButtonsFlashcardScreen callback={increaseCompletedQuestion} />
         </section>
-        <FooterFlashcardScreen answeredCount={completedQuestion} answeredColors={colorCompletedQuestion} callback={resetCount}/>
+        <FooterFlashcardScreen answeredCount={completedQuestion} answeredColors={colorCompletedQuestion} 
+        callback={resetCount} zapTarget={props.zapTarget}/>
     </div>
     )
 }

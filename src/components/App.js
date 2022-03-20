@@ -1,12 +1,13 @@
 import InitialScreen from './InitialScreen/InitialScreen';
 import FlashcardScreen from './FlashcardScreen/FlashcardScreen';
-import React from 'react';
+import {useState} from 'react';
 import '../css/reset.css';
 import '../css/style.css';
 
 function App() {
 
-    const [stateInitialScreen, setStateInitialScreen] = React.useState(true);
+    const [stateInitialScreen, setStateInitialScreen] = useState(true);
+    const [zapTarget, setZapTarget] = useState(0);
 
     function changeInitialScreen() {
         setStateInitialScreen(!stateInitialScreen);
@@ -14,7 +15,10 @@ function App() {
 
     return (
     <>
-    {stateInitialScreen === true ? <InitialScreen callback={changeInitialScreen} /> : <FlashcardScreen callback={changeInitialScreen} />}  
+    {stateInitialScreen === true ? 
+    <InitialScreen callback={changeInitialScreen} zapTarget={setZapTarget} /> 
+    : 
+    <FlashcardScreen callback={changeInitialScreen} zapTarget={zapTarget} />}  
     </>
     )
 }
