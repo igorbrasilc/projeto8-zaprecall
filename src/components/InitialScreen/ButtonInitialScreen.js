@@ -1,4 +1,3 @@
-import { zapUserTarget } from '../constants/global';
 
 export default function ButtonInitialScreen(props) {
 

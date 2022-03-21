@@ -114,7 +114,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 95vw;
-    max-width: 340px;
+    max-width: 600px;
     padding: 15px;
     margin-bottom: 5px;
     background-color: var(--color-button-bg);
@@ -197,7 +197,7 @@ button:disabled {
     background-color: var(--color-flashcard-bg);
     margin-bottom: 5px;
     min-height: 80px;
-    max-width: 340px;
+    max-width: 600px;
     height: auto;
     border-radius: 5px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
